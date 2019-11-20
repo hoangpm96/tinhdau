@@ -1,0 +1,185 @@
+---
+layout: default
+title: Tinh Dầu Tràm
+---
+<header>
+
+	
+	<div class="container">
+		<div class="column">
+			<div>
+				<h1 class="editable">Tinh dầu tràm</h1>
+				<p class="editable">Sản phẩm Tinh dầu Tràm Huế nguyên chất 100% từ thiên nhiên - tốt cho sức khoẻ.</p>
+				<div class="button">
+					<a href="#ordernow">Đặt hàng ngay</a>
+				</div>
+			</div>
+		</div>
+		<div class="column">
+			<img src="{{ site.baseurl }}/images/tinhdautram.png" alt="Tinh dầu tràm">
+		</div>
+	</div>
+</header>
+
+<div class="container">
+	<h2 class="editable" style="text-align: center;">Vì sao bạn nên mua tinh dầu Tràm?</h2>
+
+	<ul class="thirds">
+		<li>
+			<div class="image">{% include icons/site.html icon="population" %}</div>
+			<h3 class="editable">Tốt cho trẻ em</h3>
+			<p class="editable why-css">Giữ ấm cơ thể trời mùa lạnh</p>
+			<p class="editable why-css">Trị sổ mũi, cảm cúm, ho, đờm</p>
+			<p class="editable why-css">Phòng ngừa cảm lạnh</p>
+			<p class="editable why-css">Chữa đầy hơi, đau bụng cho bé</p>
+			<p class="editable why-css">Đuổi muỗi, trị vết muỗi đốt</p>
+		</li>
+
+		<li>
+			<div class="image">{% include icons/site.html icon="economy" %}</div>
+			<h3 class="editable">Phụ nữ mang thai</h3>
+			<p class="editable why-css">Trị dị ứng, các vết thương do côn trùng cắn</p>
+			<p class="editable why-css">Trị các bệnh cảm, ho, sổ mũi</p>
+			<p class="editable why-css">Giảm đau nhức xương khớp</p>
+			<p class="editable why-css">Đặc biệt, chữa đau bụng cực kỳ nhanh</p>
+		</li>
+
+		<li>
+			<div class="image">{% include icons/site.html icon="conditions" %}</div>
+			<h3 class="editable">Cuộc sống</h3>
+			<p class="editable why-css">Thanh lọc không khí</p>
+			<p class="editable why-css">Xua đuổi côn trùng</p>
+			<p class="editable why-css">An toàn cho sức khoẻ</p>
+			<p class="editable why-css">Tinh thần thư thái</p>
+		</li>
+	</ul>
+</div>
+
+<div class="darker">
+	<div class="container">
+		<h2 class="editable">Các sản phẩm</h2>
+		<!-- <p class="editor-link"><a href="cloudcannon:collections/_posts" class="btn"><strong>&#9998;</strong> Add Update</a></p> -->
+		<div class="posts">
+			{% for post in site.posts %}
+				<div class="post">
+					<div class="image" style="background-image: url({{ post.featured_image}})"></div>
+					<div class="post-content" style="text-align: center;">
+						<p class="date">{{ post.price}}</p>
+						<p class="discount">Tiết kiệm: {{ post.discount}}</p>
+						<h3>{{ post.title }}</h3>
+						<div class="button">
+							<a href="#ordernow">Đặt hàng ngay</a>
+						</div>
+						<!-- {{ post.content }} -->
+						<!-- <p class="editor-link"><a href="cloudcannon:collections/{{ post.path }}" class="btn"><strong>&#9998;</strong> Edit Update</a></p> -->
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="columns">
+		<div>
+			<img src="{{ site.baseurl }}/images/chung-nhan.webp" alt="Sheep">
+		</div>
+		<div>
+			<h2 class="editable">Sản phẩm của chúng tôi</h2>
+
+			<p class="editable">Tinh dầu tràm Huế là sản phẩm được chiết xuất tự nhiên từ cây tràm theo phương thức nấu chưng cất truyền thống không có hóa chất nên rất an toàn cho người dùng. Dầu Tràm có màu vàng hoặc màu xanh lá pha vàng – đây cũng chính là màu của chất diệp lục trong lá và có mùi gây đặc trưng. Mặc dù có mùi gây như lại khá dễ chịu chứ không hắc như một số loại dầu khác..</p>
+		</div>
+	</div>
+</div>
+<div class="darker" id="ordernow">
+	<h2 class="editable">Đặt hàng ngay</h2>
+	<!-- <div class="donate">
+		{{ site.donation_embed }}
+	</div> -->
+	<div style="text-align: center!important;">
+		<button class="btn phone-btn" style="margin: 15px;" onclick="window.location.href = 'tel:123-456-7890';"><i class="fa fa-phone"></i>  032.656.2797</button>
+		<button class="btn" style="margin: 15px" onclick="window.open('https://facebook.com/hoangpm96')"><i class="fa fa-facebook"></i>    Facebook</button>
+	</div>
+</div>
+<div class="container">
+	<hr>
+	<div class="w3-content w3-display-container" >
+  <blockquote class="mySlides">
+		<p class="quote editable">Slide 1 tại Tinh dầu xịn, khi sử dụng mùi rất thơm và giữ hương rất lâu. Gần như nhà mình đã không còn bất cứ côn trùng nào cả.</p>
+		<div class="attribute">
+			<p class="meta">
+				<span class="image"><img class="editable" src="{{ site.baseurl }}/images/duc-pham.jpg" alt="Wooly"></span>
+				<span class="author editable"><strong>Đức Phạm</strong></span>
+			</p>
+		</div>
+	</blockquote>
+  <blockquote class="mySlides">
+		<p class="quote editable">Slide 2  tại Tinh dầu xịn, khi sử dụng mùi rất thơm và giữ hương rất lâu. Gần như nhà mình đã không còn bất cứ côn trùng nào cả.</p>
+		<div class="attribute">
+			<p class="meta">
+				<span class="image"><img class="editable" src="{{ site.baseurl }}/images/duc-pham.jpg" alt="Wooly"></span>
+				<span class="author editable"><strong>Đức Phạm</strong></span>
+			</p>
+		</div>
+	</blockquote>
+  <blockquote class="mySlides">
+		<p class="quote editable">Slide 3 đã mua sản phẩm tại Tinh dầu xịn, khi sử dụng mùi rất thơm và giữ hương rất lâu. Gần như nhà mình đã không còn bất cứ côn trùng nào cả.</p>
+		<div class="attribute">
+			<p class="meta">
+				<span class="image"><img class="editable" src="{{ site.baseurl }}/images/duc-pham.jpg" alt="Wooly"></span>
+				<span class="author editable"><strong>Đức Phạm</strong></span>
+			</p>
+		</div>
+	</blockquote>
+  <div class="w3-center-slide w3-container-slide w3-section-slide w3-large-slide w3-text-white-slide w3-display-bottommiddle-slide" style="width:100%">
+    <div class="w3-left-slide w3-hover-text-khaki-slide" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right-slide w3-hover-text-khaki-slide" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge-slide demo-slide w3-border-slide w3-transparent-slide w3-hover-white-slide" onclick="currentDiv(1)"></span>
+    <span class="w3-badge-slide demo-slide w3-border-slide w3-transparent-slide w3-hover-white-slide" onclick="currentDiv(2)"></span>
+    <span class="w3-badge-slide demo-slide w3-border-slide w3-transparent-slide w3-hover-white-slide" onclick="currentDiv(3)"></span>
+  </div>
+</div>
+		<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+		  showDivs(slideIndex += n);
+		}
+
+		function currentDiv(n) {
+		  showDivs(slideIndex = n);
+		}
+
+		function showDivs(n) {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("demo-slide");
+		  if (n > x.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = x.length}
+		  for (i = 0; i < x.length; i++) {
+		    x[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		    dots[i].className = dots[i].className.replace(" w3-white", "");
+		  }
+		  x[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " w3-white";
+		}
+</script>
+</div>
+
+<!-- <div class="darker">
+	<div class="container">
+		<h2 class="editable">Join us</h2>
+		<p class="editable" style="text-align: center;">Sign up to hear the latest news and progress in our fight for the sheep vote.</p>
+		<form action="{{ site.newsletter_action }}" method="post">
+			<input type="text" name="EMAIL" placeholder="Email">
+			<input type="submit" value="Sign up"/>
+		</form>
+	</div>
+</div> -->
+
+
+
+
